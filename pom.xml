@@ -100,4 +100,11 @@
 			<url>http://download.java.net/maven/2/</url>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>deploy-repository</id>
+			<name>deployRepository</name>
+			<url>file://${DSK_M2_REPO}</url>
+		</repository>
+	</distributionManagement>
 </project>
