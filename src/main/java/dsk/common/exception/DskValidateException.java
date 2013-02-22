@@ -12,33 +12,9 @@ public class DskValidateException extends DskException {
 
 	protected Set<?> violations;
 
-	public DskValidateException() {
-		super();
-	}
-
 	public <T> DskValidateException(Set<ConstraintViolation<T>> violations) {
-		super();
+		super(null, null, false, false);
 		this.violations = violations;
-	}
-
-	public DskValidateException(long errorCode) {
-		super(errorCode);
-	}
-
-	public DskValidateException(String message, long errorCode) {
-		super(message, errorCode);
-	}
-
-	public DskValidateException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
-	public DskValidateException(String message) {
-		super(message);
-	}
-
-	public DskValidateException(Throwable cause) {
-		super(cause);
 	}
 
 	/**

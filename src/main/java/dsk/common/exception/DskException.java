@@ -7,8 +7,6 @@ package dsk.common.exception;
 public class DskException extends Exception {
 	private static final long serialVersionUID = -2842625796280025435L;
 
-	protected long errorCode;
-
 	public DskException() {
 		super();
 	}
@@ -25,17 +23,7 @@ public class DskException extends Exception {
 		super(cause);
 	}
 
-	public DskException(long errorCode) {
-		super();
-		this.errorCode = errorCode;
-	}
-
-	public DskException(String message, long errorCode) {
-		super(message);
-		this.errorCode = errorCode;
-	}
-
-	public long getErrorCode() {
-		return this.errorCode;
+	public DskException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
 	}
 }

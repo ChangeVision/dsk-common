@@ -9,8 +9,6 @@ import org.aopalliance.intercept.MethodInvocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import dsk.common.exception.DskWarningException;
-
 public class LogInterceptor implements MethodInterceptor {
 	private static final Logger LOG = LoggerFactory.getLogger(LogInterceptor.class);
 
@@ -101,7 +99,7 @@ public class LogInterceptor implements MethodInterceptor {
 			}
 			return result;
 		} catch (Exception e) {
-			if (e instanceof DskWarningException) {
+			if (e.getSuppressed().length == 0) {
 				LOG.warn(e.getLocalizedMessage());
 			} else {
 				LOG.error(e.getLocalizedMessage(), e);
