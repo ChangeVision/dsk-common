@@ -12,6 +12,13 @@ public class DskValidateException extends DskException {
 
 	protected Set<?> violations;
 
+<<<<<<< HEAD
+=======
+	public DskValidateException() {
+		super(null, null, false, false);
+	}
+
+>>>>>>> commit.
 	public <T> DskValidateException(Set<ConstraintViolation<T>> violations) {
 		super(null, null, false, false);
 		this.violations = violations;

@@ -1,14 +1,17 @@
 package dsk.common.exception;
 
 /**
- * システムで判断して返すエラーはこのクラスを使うこと<br>
- * ！！握りつぶさないこと！！
+ * システムで判断して返すエラーはこのクラスを使うこと
  */
 public class DskException extends Exception {
 	private static final long serialVersionUID = -2842625796280025435L;
 
 	public DskException() {
 		super();
+	}
+
+	public DskException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
 	}
 
 	public DskException(String message, Throwable cause) {
@@ -22,8 +25,11 @@ public class DskException extends Exception {
 	public DskException(Throwable cause) {
 		super(cause);
 	}
+<<<<<<< HEAD
 
 	public DskException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 	}
+=======
+>>>>>>> commit.
 }
