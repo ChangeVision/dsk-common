@@ -25,11 +25,4 @@ public class DskException extends Exception {
 	public DskException(Throwable cause) {
 		super(cause);
 	}
-<<<<<<< HEAD
-
-	public DskException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-		super(message, cause, enableSuppression, writableStackTrace);
-	}
-=======
->>>>>>> commit.
 }
