@@ -21,6 +21,7 @@ public class DskValidateException extends DskException {
 	 * 検証リストを取得する<br>
 	 * 受け取った型へ自動的にキャストする。
 	 * 
+     * @param <E>
 	 * @return violations
 	 */
 	@SuppressWarnings("unchecked")

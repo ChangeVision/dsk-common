@@ -16,7 +16,7 @@ import dsk.common.properties.PropertiesHelper;
 import dsk.common.properties.annotation.AutoLoad;
 
 public class AutoLoadInterceptor implements MethodInterceptor {
-	private List<String> cache = new ArrayList<String>();
+	private final List<String> cache = new ArrayList<>();
 	private PropertiesHelper propertiesHelper;
 
 	@Inject
