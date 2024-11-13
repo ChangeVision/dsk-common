@@ -2,13 +2,12 @@ package dsk.common.properties.interceptor;
 
 import java.lang.annotation.Annotation;
 
-import javax.inject.Inject;
-
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
 import dsk.common.properties.PropertiesHelper;
 import dsk.common.properties.annotation.PropertyKey;
+import jakarta.inject.Inject;
 
 public class AutoStoreInterceptor implements MethodInterceptor {
 	private PropertiesHelper propertiesHelper;
