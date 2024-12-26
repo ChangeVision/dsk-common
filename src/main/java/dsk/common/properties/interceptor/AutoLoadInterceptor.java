@@ -6,14 +6,13 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
-
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
 import dsk.common.exception.DskRuntimeException;
 import dsk.common.properties.PropertiesHelper;
 import dsk.common.properties.annotation.AutoLoad;
+import jakarta.inject.Inject;
 
 public class AutoLoadInterceptor implements MethodInterceptor {
 	private final List<String> cache = new ArrayList<>();
